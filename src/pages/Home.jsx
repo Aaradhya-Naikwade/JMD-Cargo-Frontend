@@ -9,7 +9,7 @@ import WorkProcess from "../component/WorkProcess";
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <Hero /> 
       <TrackShipment />
       <About />
       <WorkProcess />
