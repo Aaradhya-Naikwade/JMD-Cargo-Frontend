@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiArrowRight, FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import heroVideo from "../assets/express-images/Altitude_AI_Vision.mp4";
+// import heroVideo from "../assets/express-images/Altitude_Ai_Vision.mp4";
+import heroVideo from "../../src/assets/express-images/Altitude_Ai_Vision.mp4"
 
 
 const slides = [
