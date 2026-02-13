@@ -1,3 +1,158 @@
+// import { useLocation } from "react-router-dom";
+
+// const PrivacyPolicy = () => {
+//   const location = useLocation();
+//   const showHero = location.pathname === "/privacy-policy";
+
+//   return (
+//     <section className="bg-[#f6f7fb] overflow-hidden">
+//       {/* HERO */}
+//       {showHero && (
+//         <div className="relative h-[45vh] flex items-center justify-center">
+//           <div className="absolute inset-0 bg-gradient-to-r from-[#140826] via-[#271a3b] to-[#140826]" />
+//           <div className="absolute inset-0 bg-black/40" />
+
+//           <h1 className="relative z-10 text-white text-4xl sm:text-5xl font-extrabold animate-fadeIn">
+//             Privacy Policy
+//           </h1>
+//         </div>
+//       )}
+
+//       {/* CONTENT */}
+//       <div className="max-w-6xl mx-auto px-4 py-16 animate-slideUp">
+//         <p className="text-[#b21f2d] font-semibold tracking-widest mb-3">
+//           YOUR PRIVACY MATTERS
+//         </p>
+
+//         <h2 className="text-3xl sm:text-4xl font-extrabold text-[#140826] mb-6">
+//           Privacy Policy – ANS Express Services
+//         </h2>
+
+//         <p className="text-gray-600 mb-10 max-w-3xl">
+//           We don’t spam your data. Please read our Privacy Policy carefully to
+//           understand how we collect, use and protect your information.
+//         </p>
+
+//         <div className="bg-white rounded-3xl shadow-xl p-8 sm:p-12 space-y-10">
+//           <Section
+//             title="Introduction"
+//             content={[
+//               "This Privacy Policy governs the manner in which ANS Express Services collects, uses, maintains and discloses information collected from users of www.ansexpress.co.in.",
+//               "This policy applies to the Site and all products and services offered by ANS Express Services.",
+//             ]}
+//           />
+
+//           <Section
+//             title="Personal Identification Information"
+//             content={[
+//               "We may collect personal identification information when users visit our site, fill out a form or interact with services available on our Site.",
+//               "Users may visit our Site anonymously.",
+//               "We collect personal information only if users voluntarily submit such information.",
+//               "Refusal to provide personal information may prevent users from engaging in certain Site-related activities.",
+//             ]}
+//           />
+
+//           <Section
+//             title="Non-Personal Identification Information"
+//             content={[
+//               "We may collect non-personal identification information whenever users interact with our Site.",
+//               "This may include browser type, device information, operating system and Internet service provider details.",
+//             ]}
+//           />
+
+//           <Section
+//             title="Web Browser Cookies"
+//             content={[
+//               "We do not appreciate or actively use cookies for tracking purposes.",
+//             ]}
+//           />
+
+//           <Section
+//             title="How We Use Collected Information"
+//             content={[
+//               "ANS Express Services may collect and use personal information to personalize user experience.",
+//               "Aggregated information helps us understand how users as a group use our services.",
+//             ]}
+//           />
+
+//           <Section
+//             title="How We Protect Your Information"
+//             content={[
+//               "We adopt appropriate data collection, storage and processing practices.",
+//               "Security measures are in place to protect against unauthorized access, alteration or disclosure of personal information.",
+//             ]}
+//           />
+
+//           <Section
+//             title="Sharing Your Personal Information"
+//             content={[
+//               "We do not sell, trade or rent users’ personal identification information.",
+//               "Generic aggregated demographic information may be shared with trusted partners for business purposes.",
+//             ]}
+//           />
+
+//           <Section
+//             title="Your Acceptance of These Terms"
+//             content={[
+//               "By using this Site, you signify your acceptance of this policy.",
+//               "Continued use of the Site following changes to this policy will be deemed acceptance of those changes.",
+//             ]}
+//           />
+
+//           <Section
+//             title="Contacting Us"
+//             content={[
+//               "If you have any questions about this Privacy Policy or your dealings with this Site, please contact us at:",
+//               "Email: csd@ansexpress.com",
+//             ]}
+//           />
+//         </div>
+//       </div>
+
+//       {/* ANIMATIONS */}
+//       <style>
+//         {`
+//           @keyframes fadeIn {
+//             from { opacity: 0; }
+//             to { opacity: 1; }
+//           }
+//           .animate-fadeIn {
+//             animation: fadeIn 1s ease forwards;
+//           }
+
+//           @keyframes slideUp {
+//             from { opacity: 0; transform: translateY(40px); }
+//             to { opacity: 1; transform: translateY(0); }
+//           }
+//           .animate-slideUp {
+//             animation: slideUp 1s ease forwards;
+//           }
+//         `}
+//       </style>
+//     </section>
+//   );
+// };
+
+// const Section = ({ title, content }) => (
+//   <div className="animate-fadeIn">
+//     <h3 className="text-xl font-bold text-[#0c0516] mb-3">{title}</h3>
+//     <ul className="space-y-2 text-gray-600 text-sm leading-relaxed list-disc pl-5">
+//       {content.map((item, i) => (
+//         <li key={i}>{item}</li>
+//       ))}
+//     </ul>
+//   </div>
+// );
+
+// export default PrivacyPolicy;
+
+
+
+
+
+
+
+
 import { useLocation } from "react-router-dom";
 
 const PrivacyPolicy = () => {
@@ -21,89 +176,103 @@ const PrivacyPolicy = () => {
       {/* CONTENT */}
       <div className="max-w-6xl mx-auto px-4 py-16 animate-slideUp">
         <p className="text-[#b21f2d] font-semibold tracking-widest mb-3">
-          YOUR PRIVACY MATTERS
+          DATA PROTECTION POLICY
         </p>
 
         <h2 className="text-3xl sm:text-4xl font-extrabold text-[#140826] mb-6">
-          Privacy Policy – ANS Express Services
+          Privacy Policy – Your Information & Security
         </h2>
 
         <p className="text-gray-600 mb-10 max-w-3xl">
-          We don’t spam your data. Please read our Privacy Policy carefully to
-          understand how we collect, use and protect your information.
+          We respect your privacy and are committed to protecting your personal
+          information. This Privacy Policy explains how we collect, use, and
+          safeguard the data you share with us.
         </p>
 
         <div className="bg-white rounded-3xl shadow-xl p-8 sm:p-12 space-y-10">
           <Section
-            title="Introduction"
+            title="1. Introduction"
             content={[
-              "This Privacy Policy governs the manner in which ANS Express Services collects, uses, maintains and discloses information collected from users of www.ansexpress.co.in.",
-              "This policy applies to the Site and all products and services offered by ANS Express Services.",
+              "This Privacy Policy applies to our website and all services offered by our company.",
+              "By accessing or using our services, you agree to the collection and use of information in accordance with this policy.",
             ]}
           />
 
           <Section
-            title="Personal Identification Information"
+            title="2. Information We Collect"
             content={[
-              "We may collect personal identification information when users visit our site, fill out a form or interact with services available on our Site.",
-              "Users may visit our Site anonymously.",
-              "We collect personal information only if users voluntarily submit such information.",
-              "Refusal to provide personal information may prevent users from engaging in certain Site-related activities.",
+              "We may collect personal details such as name, email address, phone number, and shipping information when voluntarily submitted by users.",
+              "Information is collected when users fill out forms, request services, or contact us directly.",
+              "Users may browse our website anonymously if they choose not to provide personal data.",
             ]}
           />
 
           <Section
-            title="Non-Personal Identification Information"
+            title="3. Non-Personal Information"
             content={[
-              "We may collect non-personal identification information whenever users interact with our Site.",
-              "This may include browser type, device information, operating system and Internet service provider details.",
+              "We may collect non-personal information such as browser type, device details, IP address, and operating system.",
+              "This information helps us improve website performance and user experience.",
             ]}
           />
 
           <Section
-            title="Web Browser Cookies"
+            title="4. Use of Cookies"
             content={[
-              "We do not appreciate or actively use cookies for tracking purposes.",
+              "Our website may use cookies to enhance user experience.",
+              "Users can choose to disable cookies through their browser settings if preferred.",
             ]}
           />
 
           <Section
-            title="How We Use Collected Information"
+            title="5. How We Use Your Information"
             content={[
-              "ANS Express Services may collect and use personal information to personalize user experience.",
-              "Aggregated information helps us understand how users as a group use our services.",
+              "To provide and improve our services efficiently.",
+              "To respond to customer inquiries and support requests.",
+              "To process transactions and send important updates related to services.",
+              "To enhance website functionality and customer experience.",
             ]}
           />
 
           <Section
-            title="How We Protect Your Information"
+            title="6. Data Protection & Security"
             content={[
-              "We adopt appropriate data collection, storage and processing practices.",
-              "Security measures are in place to protect against unauthorized access, alteration or disclosure of personal information.",
+              "We implement appropriate security measures to protect your personal data.",
+              "Access to personal information is restricted to authorized personnel only.",
+              "Despite security measures, no online transmission is completely secure.",
             ]}
           />
 
           <Section
-            title="Sharing Your Personal Information"
+            title="7. Sharing of Information"
             content={[
-              "We do not sell, trade or rent users’ personal identification information.",
-              "Generic aggregated demographic information may be shared with trusted partners for business purposes.",
+              "We do not sell, trade, or rent personal information to third parties.",
+              "Information may be shared with trusted service providers strictly for operational purposes.",
+              "We may disclose information if required by law or regulatory authorities.",
             ]}
           />
 
           <Section
-            title="Your Acceptance of These Terms"
+            title="8. User Rights"
             content={[
-              "By using this Site, you signify your acceptance of this policy.",
-              "Continued use of the Site following changes to this policy will be deemed acceptance of those changes.",
+              "Users may request access to their personal data stored with us.",
+              "Users may request correction or deletion of inaccurate information.",
+              "Users may withdraw consent for data usage, subject to legal obligations.",
             ]}
           />
 
           <Section
-            title="Contacting Us"
+            title="9. Policy Updates"
             content={[
-              "If you have any questions about this Privacy Policy or your dealings with this Site, please contact us at:",
-              "Email: csd@ansexpress.com",
+              "We reserve the right to update this Privacy Policy at any time.",
+              "Changes will be posted on this page and continued use of the site indicates acceptance of updates.",
+            ]}
+          />
+
+          <Section
+            title="10. Contact Us"
+            content={[
+              "If you have questions regarding this Privacy Policy or your personal data, please contact us through our official website contact page.",
+              "Our support team will respond within a reasonable time frame.",
             ]}
           />
         </div>
